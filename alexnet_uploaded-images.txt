@@ -1,0 +1,86 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 5 key-value pairs.
+Below are 5 of them:
+ 1 key:                 Sparrow_01.jpg  label:                    sparrow
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Sun_01.jpg  label:                        sun
+ 5 key:          Kaffe_Maschine_01.jpg  label:             kaffe maschine
+
+     MATCH:
+
+ NOT A MATCH:
+
+                Sparrow_01.jpg: 
+Real:                    sparrow   Classifier: brambling, fringilla montifringilla
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                      chihuahua
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:       horizontal bar, high bar
+
+                    Sun_01.jpg: 
+Real:                        sun   Classifier:                   valley, vale
+
+         Kaffe_Maschine_01.jpg: 
+Real:             kaffe maschine   Classifier:                 espresso maker
+
+# Total Images 5 # Matches: 0 # NOT Matches: 5
+
+     MATCH:
+
+ NOT A MATCH:
+
+                Sparrow_01.jpg: 
+Real:                    sparrow   Classifier: brambling, fringilla montifringilla  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:       horizontal bar, high bar  
+PetLabelDog: 1  ClassLabelDog: 0
+
+                    Sun_01.jpg: 
+Real:                        sun   Classifier:                   valley, vale  
+PetLabelDog: 0  ClassLabelDog: 0
+
+         Kaffe_Maschine_01.jpg: 
+Real:             kaffe maschine   Classifier:                 espresso maker  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 5 # Matches: 0 # NOT Matches: 5
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  5  N Dog Images:  2  N NotDog Images:  3 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  5  N Dog Images:  2  N NotDog Images:  3 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   5
+N Dog Images        :   2
+N Not-Dog Images: 3
+ 
+pct_match : 0.0
+pct_correct_dogs : 50.0
+pct_correct_breed : 0.0
+pct_correct_notdogs : 100.0
+
+INCORRECT Dog/NOT Dog Assignments:
+misclassified Dog Labels 1
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                      chihuahua
+
+** Total Elapsed Runtime: 0:0:4
